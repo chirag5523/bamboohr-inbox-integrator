@@ -58,6 +58,7 @@ PB_DOMAIN=purplebricks
 PBM_DOMAIN=purplebricksmortgages
 
 Note: BambooHR API keys are usually provided as a string that you should encode to Base64 (or use as provided by your admin).
+
 ⚙️ How It Works
 
     Authentication: The script loads keys from the .env file and sets up the Basic Auth headers.
@@ -75,6 +76,7 @@ Note: BambooHR API keys are usually provided as a string that you should encode 
 📊 Data Output Example
 
 The final Excel file includes: | Company | Task Type | employeeId | Full Name | Department | Status | | :--- | :--- | :--- | :--- | :--- | :--- | | Purplebricks | Time Off | 1024 | Jane Doe | Finance | Pending | | PBM | Onboarding | 2055 | John Smith | Sales | In Progress |
+
 🔒 Security
 
 This project uses a .gitignore file to ensure that the .env file is never pushed to GitHub. Always keep your API keys private. If you believe your keys have been compromised, rotate them immediately in the BambooHR settings.
